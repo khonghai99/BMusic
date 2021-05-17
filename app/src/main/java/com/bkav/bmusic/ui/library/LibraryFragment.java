@@ -1,6 +1,7 @@
-package com.bkav.bmusic.ui.dashboard;
+package com.bkav.bmusic.ui.library;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,19 +15,20 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.bkav.bmusic.R;
 
-public class DashboardFragment extends Fragment {
+public class LibraryFragment extends Fragment {
 
-    private DashboardViewModel dashboardViewModel;
+    private LibraryViewModel libraryViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
-                new ViewModelProvider(this).get(DashboardViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        libraryViewModel =
+                new ViewModelProvider(this).get(LibraryViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_library, container, false);
+        final TextView textView = root.findViewById(R.id.text_notifications);
+        libraryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
+                Log.i("HaiKH", "onChanged: set");
                 textView.setText(s);
             }
         });
