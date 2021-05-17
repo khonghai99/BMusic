@@ -127,9 +127,9 @@ public class PlayListFragment extends Fragment {
 
     private Firebase getRef() {
         String pathUser = "noUser";
-        if (FirebaseAuth.getInstance().getCurrentUser() != null) {
-            pathUser = String.valueOf(FirebaseAuth.getInstance().getCurrentUser().getEmail().hashCode());
-        }
+//        if (FirebaseAuth.getInstance().getCurrentUser() != null) {
+//            pathUser = String.valueOf(FirebaseAuth.getInstance().getCurrentUser().getEmail().hashCode());
+//        }
 
         return new Firebase(Constants.FIREBASE_REALTIME_DATABASE_URL).child(Constants.FIREBASE_REALTIME_PLAYLIST_USER_PATH).child(pathUser);
     }

@@ -49,11 +49,11 @@
 
         <provider
             android:name=".provider.FavoriteSongProvider"
-            android:authorities="com.example.hanh_music_31_10.provider.FavoriteSongs"
+            android:authorities="com.bkav.bmusic.provider.FavoriteSongs"
             android:enabled="true"
             android:exported="true"
-            android:readPermission="com.example.hanh_music_31_10.provider.READ_DATABASE"
-            android:writePermission="com.example.hanh_music_31_10.provider.WRITE_DATABASE" />
+            android:readPermission="com.bkav.bmusic.provider.READ_DATABASE"
+            android:writePermission="com.bkav.bmusic.provider.WRITE_DATABASE" />
 
 
     </application>
