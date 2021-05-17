@@ -7,4 +7,32 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#008577</color>  //This is where the colorPrimary is defined
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorPrimaryVariant">#D81B60</color>
+
+    <color name="top_background_recyclerview">#fcfbf9</color>
+    <color name="bottom_background_recyclerview">#fcfbf9</color>
+    <color name="center_background_recyclerview">#f7e4dd</color>
+
+    <color name="text_color">#190707</color>
+    <color name="pink">#faefeb</color>
+    <color name="pink_playlist">#faefeb</color>
+
+    <color name="icon_color">#000000</color>
+
+    <color name="ccnews_bg">#FFFFFF</color>
+    <color name="ccnews_seekable_bar">#B7B7B7</color>
+
+    <color name="bottom_layout">#aaf8f7f6</color>
+    <color name="progress_tint">#FF5722</color>
+    <color name="thum_tint">#FF5722</color>
+    <color name="top_layout">#aaf8f7f6</color>
+    <color name="name_song">#222222</color>
+    <color name="duration">#505050</color>
+
+    <color name="icon_click_color">#FF5722</color>
 </resources>
